@@ -1,3 +1,13 @@
+body.light {
+    background-color: #d2f4ee;
+    color: #2e2f42;
+}
+
+body.dark {
+    background-color: #2e2f42;
+    color: #d2f4ee;
+}
+
 .feedback-form {
     border-radius: 8px;
     padding: 24px;
@@ -96,3 +106,83 @@ border: none;
 .form-btn:hover {
     background-color: #6c8cff;
 }
+
+.login-form {
+    width: 300px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  .login-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .login-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.dark .login-btn {
+    background-color: #123eda;
+}
+
+  .login-btn:hover {
+    background-color: #689f38;
+  }
+  .login-btn:active {
+    background-color: #3e8e41;
+  }
+
+
+  .switcher {
+    position: relative;
+    padding: 1px;
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25%/50%;
+  }
+  .switcher-track {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .switcher-marker {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1),
+      1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: transform 250ms;
+  }
+  .switcher-toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+  .switcher-toggle:checked + .switcher-marker {
+    transform: translateX(20px);
+  }
